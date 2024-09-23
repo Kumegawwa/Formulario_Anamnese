@@ -1,6 +1,6 @@
 # 🌟 Formulário de Anamnese
 
-Bem-vindo ao nosso formulário de anamnese interativo! 🎉 Este projeto foi criado para coletar suas informações pessoais de forma organizada e divertida, proporcionando uma experiência incrível!
+Bem-vindo ao nosso formulário de anamnese interativo! 🎉 Este projeto foi criado para coletar suas informações pessoais de forma organizada, proporcionando uma experiência incrível!
 
 ## 🚀 Tecnologias Utilizadas
 
