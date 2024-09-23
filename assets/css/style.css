@@ -11,6 +11,7 @@ body {
     background-position: center; 
     background-repeat: no-repeat; 
     font-family: Arial, sans-serif;
+    font-size: 16px;
     color: #FFFFFF;
 }
 
@@ -215,45 +216,99 @@ textarea::placeholder {
     font-size: 18px;
 }
 
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem; /* Tamanho da fonte em tablets */
+        letter-spacing: 0.2rem;
+    }
+
+    section input {
+        width: 30rem; /* Largura dos inputs em tablets */
+        padding: 1rem;
+    }
+
+    .resultados-pesquisa {
+        width: 70%; /* Largura da caixa de resultados em tablets */
+        height: 40vh;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.5rem; /* Tamanho da fonte dos títulos em tablets */
+    }
+}
+
+/* Responsividade para telas de médio porte */
 @media (max-width: 768px) {
-h1 {
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
-}
-section input {
-    width: 25rem; 
-    padding: 0.8rem;
-}
-.resultados-pesquisa {
-    width: 40rem;
-    height: 40vh;
-}
-.item-resultado h2 {
-    font-size: 1.3rem;
-}
+    h1 {
+        font-size: 2rem; /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.2rem;
+    }
+
+    section input {
+        width: 25rem; /* Largura dos inputs em telas menores */
+        padding: 0.8rem;
+    }
+
+    .resultados-pesquisa {
+        width: 40rem; /* Largura da caixa de resultados em telas menores */
+        height: 40vh;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+    }
 }
 
+/* Responsividade para celulares */
 @media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem;
+    }
 
-h1 {
-    font-size: 1.8rem;
-    letter-spacing: 0.1rem; 
+    section input {
+        width: 17rem; /* Largura total dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
 }
-section input {
-    width: 17rem;
-}
-section button {
-    padding: 0.6rem 1rem; 
-    font-size: 0.9rem; 
-}
-.resultados-pesquisa {
-    width: 90%;
-    height: 50vh; 
-}
-.item-resultado h2 {
-    font-size: 1.1rem; 
-}
-footer {
-    font-size: 0.9rem;
-}
+
+/* Responsividade para smartphones em modo retrato */
+@media (max-width: 375px) {
+    h1 {
+        font-size: 1.6rem; /* Tamanho da fonte em smartphones */
+    }
+
+    section input {
+        width: 100%; /* Largura total dos inputs em smartphones */
+    }
+
+    section button {
+        padding: 0.5rem; /* Ajusta o padding do botão em smartphones */
+        font-size: 0.85rem; /* Tamanho da fonte do botão em smartphones */
+    }
+
+    .resultados-pesquisa {
+        height: auto; /* Altura automática da caixa de resultados em smartphones */
+    }
+
+    .item-resultado h2 {
+        font-size: 1rem; /* Tamanho da fonte dos títulos em smartphones */
+    }
 }
