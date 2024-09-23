@@ -18,7 +18,6 @@ Desenvolvido por **Stefanne Pardim de Arruda Souza (RA: 2757073)** e **Lucas Kum
 - Campos para informar alergias e acompanhantes. 🤔
 - Sugestões de email com domínios populares. 📧
 - Animações interativas com Canvas. 🎊
-- Música de fundo para deixar a experiência ainda mais legal! 🎶
 
 ## 📂 Estrutura do Projeto
 
