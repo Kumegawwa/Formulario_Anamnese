@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Anamnese</title>
+    <link rel="shortcut icon" href="/assets/imagens/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <img src="/assets/imagens/Logo.png" alt="Starry Court" style="margin-bottom: 50px;">
+    <audio id="myAudio" src="/assets/audio/musica-fundo.mp3" autoplay loop></audio>
+</head>
+<body>
+    <canvas></canvas>
+    <div class="form-container">
+        <h1>Formulário de Anamnese</h1>
+        <h2>Informações Pessoais</h2>
+        <form action="#" method="post">
+            <div class="form-grid">
+                <div>
+                    <div class="form-group">
+                        <label for="nome">Informe seu nome completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" name="idade" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sexo">Informe o seu gênero:</label>
+                        <select id="sexo" name="sexo" required>
+                            <option value="" disabled selected>Selecione seu gênero</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="não-binário">Não binário</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="email@example.com" list="email-suggestions">
+                        <datalist id="email-suggestions">
+
+                        </datalist>
+                    </div>
+                    <div class="form-group">
+                        <label for="fone">Celular com DDD:</label>
+                        <input type="tel" id="fone" name="fone" required placeholder="(xx) xxxxx-xxxx" oninput="formatPhone(this)">
+                    </div>                    
+                    <div class="form-group">
+                        <label for="hora-desejada">Qual seria o horário do seu agendamento?</label>
+                        <input type="time" id="hora-desejada" name="hora-desejada">
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="profissional">Profissional desejado</label>
+                            <select id="profissional" name="profissional" required>
+                                <option value="" disabled selected>Selecione um profissional</option>
+                                <option value="stefanne">Stefanne</option>
+                                <option value="maria">Maria</option>
+                                <option value="leticia">Leticia</option>
+                                <option value="joana">Joana</option>
+                                <option value="cleiton">Cleiton</option>
+                                <option value="julia">Julia</option>
+                            </select>
+                    </div>
+                    <div class="form-group">
+                        <p>Qual procedimento você irá realizar?</p>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="corte" name="corte" value="corte">
+                                <label for="corte">Corte</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="alisamento" name="alisamento" value="alisamento">
+                                <label for="alisamento">Alisamento</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="tintura" name="tintura" value="tintura">
+                                <label for="tintura">Tintura</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="botox" name="botox" value="botox">
+                                <label for="botox">Botox</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="escova" name="escova" value="escova">
+                                <label for="escova">Escova</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="penteado" name="penteado" value="penteado">
+                                <label for="penteado">Penteado</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tamanho-cabelo">Qual o comprimento do seu cabelo atualmente?</label>
+                        <select id="tamanho-cabelo" name="tamanho-cabelo" required>
+                            <option value="" disabled selected>Selecione o tamanho</option>
+                            <option value="curto">Curto (até o ombro)</option>
+                            <option value="medio">Médio (até o meio das costas)</option>
+                            <option value="longo">Longo (abaixo das costas)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p>Você trará acompanhantes?</p>
+                        <div class="radio-group">
+                            <input type="radio" id="sim-s" name="acompanhante" value="SIM, IREI LEVAR ACOMPANHANTES">
+                            <label for="sim-s">Sim, irei levar acompanhantes</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="não-n" name="acompanhante" value="NÃO, NÃO LEVAREI ACOMPANHANTES">
+                            <label for="não-n">Não, não irei levar acompanhantes</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p>Você possui alguma alergia?</p>
+                        <div class="radio-group">
+                            <input type="radio" id="sem-alergia" name="alergia" value="não possuo">
+                            <label for="sem-alergia">Não tenho nenhuma alergia</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="com-alergia" name="alergia" value="possuo alergia">
+                            <label for="com-alergia">Tenho alergia a:</label>
+                        </div>
+                        <textarea style="margin-top: 15px;" id="alergia-detalhes" name="alergia-detalhes" placeholder="Descreva sua alergia aqui"></textarea>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="btn-group">
+                <button style="margin-right: 25px;" class="btn btn--1 limpar" data-cor="#b41313"> Limpar </button>
+                <button id="submitButton" class="btn btn--1 enviar" data-cor="green"> Enviar </button>
+            </div>
+        </form>
+    </div>
+    <div class="contact-info">
+                <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp">
+                    <i class="fa-brands fa-whatsapp" style="color: #ffffff;" ></i> 
+                    <span>Entre em contato pelo WhatsApp</span></a>
+        <a href="mailto:contato@exemplo.com" style="margin-left: 50vh;" target="_blank" class="envelope"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i>Entre em contato pelo E-mail</a>
+    </div>
+    <script src="/assets/javascript/script.js"></script>
+</body>
+</html>

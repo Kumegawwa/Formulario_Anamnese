@@ -1,0 +1,259 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;     
+    height: 100vh;           
+    margin: 0;
+    background-image: url('/assets/imagens/backgroud.png'); 
+    background-color: #C5AE81; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.form-container {
+    background-color: #04040456;
+    padding: 30px;
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    width: 70%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    max-width: 90%;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+p {
+    margin: 15px 20 5px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 50px;
+}
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #8b8b8b80;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    color: #000000; 
+}
+
+option[disabled]:checked {
+    color: #666; 
+  }
+
+input::placeholder {
+    font-size: 14px;
+}
+
+textarea::placeholder {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.radio-group input {
+    width: 5%;
+}
+
+.radio-group label {
+    width: 90%;
+    flex-grow: 1;
+    margin-bottom: 0;
+}
+
+.textarea-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.textarea-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.checkbox-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox-item label {
+    margin-bottom: 0;
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.contact-info i {
+    margin-right: 8px;
+}
+
+.contact-info .fa-whatsapp {
+    color: #25CF43; 
+}
+
+.contact-info .fa-envelope {
+    color: #19AFFF; 
+}
+
+.btn-group {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn {
+  padding: 15px 90px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all .5s;
+  background: transparent;
+  position: relative;
+}
+
+.btn--1 {
+  background: #1e76e9;
+  color: white;
+}
+
+.btn--1:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.btn-verde {
+    background-color: green;
+    color: white;
+}
+
+.btn-vermelho {
+    background-color: red;
+    color: white;
+}
+
+.whatsapp {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.envelope {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    background-color: #00ccff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+section input {
+    width: 25rem; 
+    padding: 0.8rem;
+}
+.resultados-pesquisa {
+    width: 40rem;
+    height: 40vh;
+}
+.item-resultado h2 {
+    font-size: 1.3rem;
+}
+}
+
+@media (max-width: 480px) {
+
+h1 {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem; 
+}
+section input {
+    width: 17rem;
+}
+section button {
+    padding: 0.6rem 1rem; 
+    font-size: 0.9rem; 
+}
+.resultados-pesquisa {
+    width: 90%;
+    height: 50vh; 
+}
+.item-resultado h2 {
+    font-size: 1.1rem; 
+}
+footer {
+    font-size: 0.9rem;
+}
+}
