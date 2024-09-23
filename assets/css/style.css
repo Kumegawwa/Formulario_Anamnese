@@ -6,7 +6,8 @@ body {
     height: 100vh;           
     margin: 0;
     background-image: url('/assets/imagens/backgroud2.png'); 
-    background-color: #C5AE81; 
+    background-color: #C5AE81;
+    background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
     font-family: Arial, sans-serif;
